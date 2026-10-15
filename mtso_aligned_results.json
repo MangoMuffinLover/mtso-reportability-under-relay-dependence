@@ -1,0 +1,202 @@
+{
+  "route_count": 6,
+  "subset_count": 64,
+  "uniform_matroid_rank": 3,
+  "survival_threshold": "4/5",
+  "route_survival_probabilities": {
+    "central": "1",
+    "diagonal": "1",
+    "east_relay": "1",
+    "east_scout": "17/20",
+    "west_relay": "1",
+    "west_scout": "17/20"
+  },
+  "objectives": {
+    "expected_visitation": {
+      "audit": {
+        "inequalities_checked": 1458,
+        "violation_count": 0,
+        "minimum_slack": "0",
+        "first_five_violations": []
+      },
+      "greedy_set": [
+        "diagonal",
+        "east_scout",
+        "west_scout"
+      ],
+      "greedy_value": "71/10",
+      "greedy_trace": [
+        {
+          "route": "east_scout",
+          "gain": "51/20",
+          "value": "51/20"
+        },
+        {
+          "route": "west_scout",
+          "gain": "51/20",
+          "value": "51/10"
+        },
+        {
+          "route": "diagonal",
+          "gain": "2",
+          "value": "71/10"
+        }
+      ],
+      "optimal_set": [
+        "diagonal",
+        "east_scout",
+        "west_scout"
+      ],
+      "optimal_value": "71/10",
+      "greedy_to_optimal_ratio": "1"
+    },
+    "fixed_reportable_sets": {
+      "audit": {
+        "inequalities_checked": 1458,
+        "violation_count": 0,
+        "minimum_slack": "0",
+        "first_five_violations": []
+      },
+      "greedy_set": [
+        "diagonal",
+        "east_scout",
+        "west_scout"
+      ],
+      "greedy_value": "57/10",
+      "greedy_trace": [
+        {
+          "route": "east_scout",
+          "gain": "39/20",
+          "value": "39/20"
+        },
+        {
+          "route": "west_scout",
+          "gain": "39/20",
+          "value": "39/10"
+        },
+        {
+          "route": "diagonal",
+          "gain": "9/5",
+          "value": "57/10"
+        }
+      ],
+      "optimal_set": [
+        "diagonal",
+        "east_scout",
+        "west_scout"
+      ],
+      "optimal_value": "57/10",
+      "greedy_to_optimal_ratio": "1"
+    },
+    "selection_dependent_relays": {
+      "audit": {
+        "inequalities_checked": 1458,
+        "violation_count": 324,
+        "minimum_slack": "-39/20",
+        "first_five_violations": [
+          {
+            "small": [],
+            "large": [
+              "east_relay"
+            ],
+            "element": "east_scout",
+            "gain_small": "0",
+            "gain_large": "39/20",
+            "slack": "-39/20"
+          },
+          {
+            "small": [],
+            "large": [
+              "east_scout"
+            ],
+            "element": "east_relay",
+            "gain_small": "0",
+            "gain_large": "39/20",
+            "slack": "-39/20"
+          },
+          {
+            "small": [],
+            "large": [
+              "west_relay"
+            ],
+            "element": "west_scout",
+            "gain_small": "0",
+            "gain_large": "39/20",
+            "slack": "-39/20"
+          },
+          {
+            "small": [],
+            "large": [
+              "west_scout"
+            ],
+            "element": "west_relay",
+            "gain_small": "0",
+            "gain_large": "39/20",
+            "slack": "-39/20"
+          },
+          {
+            "small": [],
+            "large": [
+              "central",
+              "east_relay"
+            ],
+            "element": "east_scout",
+            "gain_small": "0",
+            "gain_large": "39/20",
+            "slack": "-39/20"
+          }
+        ]
+      },
+      "greedy_set": [
+        "central",
+        "diagonal",
+        "east_relay"
+      ],
+      "greedy_value": "9/5",
+      "greedy_trace": [
+        {
+          "route": "diagonal",
+          "gain": "9/5",
+          "value": "9/5"
+        },
+        {
+          "route": "central",
+          "gain": "0",
+          "value": "9/5"
+        },
+        {
+          "route": "east_relay",
+          "gain": "0",
+          "value": "9/5"
+        }
+      ],
+      "optimal_set": [
+        "diagonal",
+        "west_relay",
+        "west_scout"
+      ],
+      "optimal_value": "15/4",
+      "greedy_to_optimal_ratio": "12/25"
+    }
+  },
+  "bundle_lift": {
+    "coverage_audit": {
+      "inequalities_checked": 27,
+      "violation_count": 0,
+      "minimum_slack": "0"
+    },
+    "resource_no_reuse_exchange_audit": {
+      "feasible_sets": 5,
+      "exchange_violation_count": 1,
+      "witness": {
+        "small": [
+          "bundle_23"
+        ],
+        "large": [
+          "bundle_12",
+          "bundle_34"
+        ]
+      }
+    }
+  }
+}

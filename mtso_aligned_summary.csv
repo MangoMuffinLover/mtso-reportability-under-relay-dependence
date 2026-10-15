@@ -1,0 +1,4 @@
+objective,inequalities_checked,violations,minimum_slack,greedy_value,optimal_value,greedy_to_optimal_ratio
+expected_visitation,1458,0,0,7.1,7.1,1.0
+fixed_reportable_sets,1458,0,0,5.7,5.7,1.0
+selection_dependent_relays,1458,324,-39/20,1.8,3.75,0.48
